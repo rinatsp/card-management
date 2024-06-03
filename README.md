@@ -36,6 +36,19 @@ $ npm install
 
 ```bash
 # development
+
+# Start the PostgreSQL database with docker
+$ docker-compose up -d
+
+# Apply database migrations:
+$ npx prisma migrate dev
+
+# For filling DB use
+$ npx ts-node prisma/seed.ts
+
+# Start
+$ npm run start:dev #preferable 
+
 $ npm run start
 
 # watch mode
